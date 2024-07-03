@@ -1,21 +1,25 @@
-import './App.css'
-import Counter from './components/Counter'
-import Dashboard from './components/Dashboard'
-import Todos from './components/Todos'
-import AddTodo from './components/Todos/components/AddTodo'
+import "./App.css";
+import Counter from "./components/Counter";
+import Dashboard from "./components/Dashboard";
+import Todos from "./components/Todos";
+import AddTodo from "./components/Todos/components/AddTodo";
+import WordCloud from "./components/WordCloud";
 
 function App() {
   return (
     <>
-      <div style={{height: "100px"}}></div>
+      <div style={{ height: "100px" }}></div>
       <Counter />
-      <div style={{height: "100px"}}></div>
+      <div style={{ height: "100px" }}></div>
+      <WordCloud />
+      <div style={{ height: "100px" }}></div>
       <AddTodo />
       <Todos />
-      <div style={{height: "100px"}}></div>
+
+      <div style={{ height: "100px" }}></div>
       <Dashboard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

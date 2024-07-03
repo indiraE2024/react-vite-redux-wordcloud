@@ -5,38 +5,86 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* =====================
+      word cloud
+===================== */
+
+.wordcloud-container text {
+  cursor: pointer;
+}
+
+WordCloud.css .wordcloud-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: white;
+}
+/* 
+svg {
+  border: 1px solid #ccc; 
+
+} */
+
+.slider-container {
+  margin-top: 10px; /* Space between the SVG and the slider */
+}
+
+/* WordCloud.css */
+.word-cloud text {
+  font-family: Quicksand;
+}
+
+.word0 {
+  fill: #1f77b4; /* Color 1 */
+}
+
+.word1 {
+  fill: #2ca02c; /* Color 2 */
+}
+
+.word2 {
+  fill: #17becf; /* Color 3 */
+}
+
+.word3 {
+  fill: #44a0a1; /* Color 4 */
+}
+
+.word4 {
+  fill: #9467bd; /* Color 5 */
+}
+
+.word5 {
+  fill: #4b8c79;
+}
+.word6 {
+  fill: #e377c2;
+}
+.word7 {
+  fill: #7f7f7f;
+}
+.word8 {
+  fill: #bcbd22;
+}
+.word9 {
+  fill: #7ed9ee;
+}
+
+/* Adjust font size for better readability */
+.wordcloud text {
+  font-size: 20px; /* Default font size */
+}
+
+.slider-container {
+  padding-top: 50px;
+  text-align: center;
 }
